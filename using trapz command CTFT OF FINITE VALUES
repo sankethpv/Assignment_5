@@ -1,0 +1,12 @@
+
+ t=-2:.01:2;
+ k=0;
+ for f=-2:.01:2
+ k=k+1;
+ X(k)=trapz(t,exp(-j*2*pi*f*t));
+ end
+ f=-2:.01:2;
+ disp(X(k))
+ plot(f,X)
+ grid on;
+
